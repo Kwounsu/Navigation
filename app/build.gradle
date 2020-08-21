@@ -39,9 +39,11 @@ android {
             testCoverageEnabled false
         }
     }
-    dataBinding {
-        enabled = true
+
+    buildFeatures {
+         dataBinding = true
     }
+
     productFlavors {
     }
 
@@ -68,5 +70,4 @@ dependencies {
     //Navigation
     implementation "androidx.navigation:navigation-fragment-ktx:$rootProject.navigationVersion"
     implementation "androidx.navigation:navigation-ui-ktx:$rootProject.navigationVersion"
-
 }
